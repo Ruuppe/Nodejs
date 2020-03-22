@@ -1,0 +1,54 @@
+<html>
+<head>
+	<style>
+		table {
+			table-layout: fixed;
+			border: solid black 1px;
+			width: 1200px;
+		}
+		th {
+			border: solid black 1px;
+			padding: 8px;
+		}
+		td {
+			border: solid gray 1px;
+		}
+	</style>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+	<div id="dialog-form" title="Uusi asiakas">
+		<form>
+			<p>Nimi: <br><input type="text" id="asnimi"></p>
+			<p>Osoite: <br><input type="text" id="asosoite"></p>
+			<p>Postinumero: <br><input type="text" id="aspostinro"></p>
+			<p>Postitoimipaikka: <br><input type="text" id="aspostitmp"></p>
+			<p>Asiakastyyppi: <br><select style="width:208px" id="asasty"></select></p>
+		</form>
+		<p style="color:red" id="virhe"></p>
+	</div>
+
+	<p>Nimi: <br><input type="text" id="nimi"></p>
+	<p>Osoite: <br><input type="text" id="osoite"></p>
+	<p>Asiakastyyppi: <br><select style="width:148px" id="asty"></select></p>
+	<button id="hae">Hae</button><br><br>
+	<button id="lisaa">Lisää asiakas</button><br><br>
+	
+	<table id="taulu">
+		<tr>
+			<th style="width:50px">Avain</th>
+			<th>Nimi</th>
+			<th>Osoite</th>
+			<th>Postinumero</th>
+			<th>Postitoimipaikka</th>
+			<th>Luontipäivä</th>
+			<th style="width:80px">Asty_avain</th>
+			<th style="width:42px">Poista</th>
+		</tr>
+	</table>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/teht44.js"></script>
+</body>
+</html>
